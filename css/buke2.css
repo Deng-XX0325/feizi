@@ -1,0 +1,123 @@
+
+.yin>a{
+  text-decoration: none;
+}
+.vidcon{
+    margin: 30px 10%;
+}
+.vidcon:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#videos,#condivol{
+    /*border: black 1px solid;*/
+    float: left;
+}
+#condivol{
+    width: 25%;
+}
+#videos{
+    width: 75%;
+}
+.prelude{
+    width: 95%;
+}
+.prelude div:nth-of-type(1) {
+    width: 100%;
+    border: black 1px solid;
+    margin: 0 0 10px 2.5% ;
+}
+.prelude div:nth-of-type(1) img{
+   margin: 0 auto;
+    width: 100%;
+    height: 10%;
+}
+.prelude div:nth-of-type(2) p:nth-of-type(1){
+    font: normal 900 20px "华文楷体";
+}
+.tuijian{
+ padding-top: 30px;
+}
+#videos span{
+    font: normal 900 30px "华文楷体";
+}
+.tuione>div,.tuitwe>div{
+display: inline-block;
+    vertical-align:top;
+    width: 30%;
+    margin-left: 2%;
+}
+.tuione>div div,.tuitwe>div div{
+    margin-top: 10px;
+}
+.tuijian img{
+    width: 100%;
+}
+.hrone{
+    display: inline-block;
+    color: black;
+    width: 80%;
+    border: black 2px double;
+   vertical-align: middle;
+}
+#condivol>div>div:nth-of-type(1){
+    font: normal 500 20px "方正姚体";
+    line-height: 50px;
+    color: #ffffff;
+    background-color: #B22222;
+}
+#condivol>div>div:nth-of-type(2)>ul{
+    padding-bottom: 10px;
+    border-bottom: 1px black solid;
+}
+#condivol>div>div:nth-of-type(2)>ol>li a>ul>li,#condivol>div>div:nth-of-type(2)>ul>li{
+    list-style: none;
+    display: inline-block;
+    width: 32%;
+
+}
+#condivol>div>div:nth-of-type(2)>ol>li{
+    list-style: none;
+    margin-bottom: 5px;
+    line-height: 30px;
+    height: 30px;
+}
+#condivol>div>div:nth-of-type(2)>ol>li ul:hover{
+   background-color: rgba(178, 34, 34, 0.28);
+}
+#condivol>div{
+    width: 90%;
+    margin: 0 auto;
+    border: black 2px double;
+}
+#condivol>div>div:nth-of-type(2){
+    padding: 20px;
+}
+
+@media screen and (max-width:950px) {
+    .prelude,#condivol{
+        width: 100%;
+    }
+    #videos{
+        width: 100%;
+    }
+    .vidcon{
+        margin: 30px 0;
+    }
+    .prelude div:nth-of-type(1){
+        width: 100%;
+    }
+    .prelude div:nth-of-type(1) {
+        margin: 0 0 10px 0 ;
+    }
+    #condivol{
+        margin: 50px 0;
+    }
+
+}
+
+
+.tuione div:hover,.tuitwe div:hover,.tuione div:hover,.tuitwe div:hover{
+    color: #B22222;
+}

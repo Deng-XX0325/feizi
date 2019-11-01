@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+em{
+    font-style: normal;
+}
+ a:link,
+a:visited,
+a:hover,
+a:active
+{
+    text-decoration:none;
+    color: #000;
+}
+.conceal{
+    display: none;
+}
+#logo img{
+    width: 100%;
+    height: 15rem;
+}
+#logo{
+    width: 100%;
+    height: 15rem;
+}
+#logo ul{
+    position: absolute;
+    top: 10px;
+    right: 10%;
+}
+#logo ul li{
+    list-style: none;
+    float: left;
+    font: normal 500 20px "方正舒体";
+    padding: 10px;
+}
+#logo ul li a:hover{
+    color: #B22222;transition: .5s;
+}
+.fixed{
+    position: fixed;
+    top:0;
+}
+
+#menu{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    z-index: 100;
+}
+#menu ul{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 13%;
+}
+#menu ul li{
+    list-style: none;
+    float: left;
+    flex-grow: 1;
+    line-height: 60px;
+    width: 100%;
+}
+#menu ul li a{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: black;
+}
+#menu ul li a:hover{
+   color: #B22222;!important;
+    background-color: #9d9d9d;
+    text-decoration:none;
+    transition: all .3s;
+}
+
+@media screen and (max-width:1100px){
+    #menu ul li a{
+        font-size: 1.5rem;
+}
+
+    }
+@media screen and (max-width:700px){
+    #menu ul li:nth-of-type(3),
+    #menu ul li:nth-of-type(6),
+    #menu ul li:nth-of-type(5),
+    #menu ul li:nth-of-type(7){
+         display: none;
+
+    }
+    #menu ul li.iconfont{
+        margin-top:-1px;
+    }
+    #logo img{
+        width: 100%;
+        height: 10rem;
+    }
+    #logo{
+        width: 100%;
+        height: 10rem;
+    }
+}
+.ss,#sousou{
+    position:absolute;
+}
+.ss{
+    width: 100%;
+    height: 60px;
+}
+#sousou{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+}
+#sousou::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sousou>div {
+   display: inline-block;
+}
+#sousou> div:nth-of-type(2){
+    flex:5;
+
+}
+#sousou> div:nth-of-type(2) label{
+    width:100%;
+ }
+
+#sousou>div:nth-of-type(2) label input{
+    height:5rem;
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    background-color: rgba(52, 52, 52, 0.89);
+    border: 1px solid rgba(52, 52, 52, 0.97);
+}
+input::placeholder{
+    font-size: 17px;
+
+}
+#sousou .iconfont{
+    margin-top: 10px;
+    flex:1;
+}
+#sousou .iconfont:nth-of-type(1){
+    text-align: right;
+}
+#sousou> div a{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    text-decoration:none;
+    padding: 12px;
+}
+#base{
+    width: 100%;
+    background-color: rgba(129, 129, 129, 0.1);
+    margin-top: 100px;
+    text-align: center;
+}
+#base div ul li{
+    margin: 40px 10px 10px;
+    display: inline-block;
+}
+#base div div{
+    margin: 10px 10px 40px;
+    display: inline-block;
+
+}
+
+/************************************************/
+#section01{
+    /*border: black 1px solid;*/
+    margin: 20px 15% 0;
+}
+#section01:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#lunbo{
+    width: 100%;
+    border: black 1px solid;
+    position: relative;
+    height: 400px;
+}
+.lunbo01 div{
+     width: 100%;
+    position: absolute;
+ }
+
+.lunbo01>div.indicate{
+    z-index: 5;
+}
+.lunbo01 div:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.lunbo01 div img{
+    width: 100%;
+    height: 400px;
+}
+#lunbo ul{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    z-index: 50;
+}
+#lunbo ul li.actent{
+    background-color:white;
+}
+#lunbo ul li{
+    width: 15px;
+    height: 15px;
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+    border: black 1px solid;
+    border-radius: 50%;
+}
+#lunbo div:nth-of-type(2) span{
+    position: absolute;
+    /*display: inline-block;*/
+    font:normal 400 5rem "微软雅黑 Light";
+    height: 60px;
+    line-height: 60px;
+    width: 30px;
+    background-color: rgba(157, 157, 157, 0.38);
+z-index: 50;
+    display: none;
+}
+#lunbo div:nth-of-type(2) span:nth-of-type(1){
+    position: absolute;
+    top:40%;
+    left: 10px;
+
+
+}
+#lunbo div:nth-of-type(2) span:nth-of-type(2){
+    position: absolute;
+    top:40%;
+    right: 10px;
+
+}
+@media screen and (max-width:950px) {
+    #section01{
+        margin: 10px 0;
+    }
+}
+/************************************************************/
+.content01{
+    margin-top: 40px;
+}
+.p01{
+
+    font:normal 600  2.5rem "方正姚体";
+}
+.content01 span{
+    font:normal 500  2rem "方正姚体";
+}
+
+.content01 table:hover{
+    box-shadow: 0 0 10px #bababa;
+}
+.content01 a{
+    font:normal 600  1.3rem "黑体";
+}
+.content01 a:hover{
+    color:#B22222;
+}
+.content01 td{
+    padding: 5px;
+}
+.content01 img{
+    width: 100px;
+}
+.content01>div{
+    display: inline-block;
+    width: 33%;
+    border: black 1px solid;
+    padding: 20px;
+}
+.table03,.table01,.table02{
+    width: 100%;
+    border: black 1px solid;
+}
+
+@media screen and (max-width:950px) {
+    .content01>div{
+        width: 100%;
+    }
+}
+
+/*********************************************************************/
+#author{
+    margin-top: 50px;
+}
+#author:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+#author>div:nth-of-type(2),#author>div:nth-of-type(1){
+    float: left;
+}
+#author>div:nth-of-type(1){
+    width: 71%;
+}
+#author p ,#wenzhang p ,#roll p{
+    font:normal 600  2.5rem "方正姚体";
+    line-height: 50px;
+}
+#author>div:nth-of-type(1) table tr td{
+    border: black 1px solid;
+    padding: 10px;
+}
+#author>div:nth-of-type(1) table tr td div{
+    width: 40%;
+   display: inline-block;
+    vertical-align: top;
+}
+#author>div:nth-of-type(1) table tr td div img{
+    width: 100%;
+}
+#author>div:nth-of-type(1) table tr td ul{
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+#author>div:nth-of-type(1) table tr td ul li{
+    margin-top: 3px;
+}
+#author>div:nth-of-type(1) em{
+    font:normal 600  2rem "方正姚体";
+}
+
+
+#author>div:nth-of-type(1) li,#author>div:nth-of-type(2) li{
+    list-style: none;
+}
+#author>div:nth-of-type(2){
+    width: 27%;
+    margin-left: 2%;
+}
+#author>div:nth-of-type(2) ul{
+    margin-top: 2px;
+    width: 100%;
+}
+#author>div:nth-of-type(2) li{
+    width: 100%;
+    padding: 5px 0;
+    border: black 1px solid;
+    cursor: pointer;
+}
+#author>div:nth-of-type(2) li em{
+    padding:0 10%;
+    font:normal 400  1.7rem "华文楷体";
+}
+#author>div:nth-of-type(2) li:hover{
+   background-color: rgba(214, 214, 214, 0.4);
+}
+#author>div:nth-of-type(2) table{
+    display: none;
+}
+#author>div:nth-of-type(2) table.shows{
+    display: block;
+}
+#author>div:nth-of-type(2) img{
+    margin: 2px 5px 0;
+}
+@media screen and (max-width:950px) {
+    #author>div:nth-of-type(1),#author>div:nth-of-type(2){
+        width: 100%;
+        margin-left: 0;
+    }
+    #author>div:nth-of-type(1) table tr td ul,#author>div:nth-of-type(1) table tr td div{
+        width: 100%;
+
+    }
+}
+/******************************************************/
+#wenzhang{
+    margin-top: 30px;
+}
+#wenzhang:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#wenzhang>div:nth-of-type(1){
+  float: left;
+    width: 72%;
+}
+#wenzhang>div:nth-of-type(1) div{
+    vertical-align: top;
+    display: inline-block;
+    width: 32%;
+}
+#wenzhang>div:nth-of-type(1) div:hover{
+    box-shadow: 0 0 10px #9d9d9d;
+}
+#wenzhang>div:nth-of-type(1) div ul{
+    width: 100%;
+
+}
+#wenzhang>div:nth-of-type(1) div li:nth-of-type(1) img{
+    width: 100%;
+}
+#wenzhang>div:nth-of-type(1) div li{
+   list-style: none;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 10px;
+
+}
+#wenzhang>div:nth-of-type(1) div li:nth-of-type(2){
+    font:normal 600  1.7rem "华文楷体";
+
+}
+#wenzhang>div:nth-of-type(1) div li:nth-of-type(3){
+    font:normal 400  1.7rem "华文楷体";
+
+}
+#wenzhang>div:nth-of-type(2){
+    width: 26%;
+    margin-left: 2%;
+    float: left;
+}
+#wenzhang>div:nth-of-type(2) ul{
+    width: 90%;
+    margin: auto;
+}
+#wenzhang>div:nth-of-type(2) li:nth-of-type(1){
+    /*margin-bottom: 10px;*/
+    border-bottom: black 2px solid;
+}
+#wenzhang>div:nth-of-type(2) li{
+    border-bottom: #bababa 1px solid;
+    padding: 5px 0;
+    list-style: none;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+#wenzhang>div:nth-of-type(2) li:nth-of-type(1)~li:hover{
+    color: rgba(178, 34, 34, 0.5);
+}
+#wenzhang>div:nth-of-type(2) li span:nth-of-type(1){
+    color: #9d9d9d;
+}
+#wenzhang>div:nth-of-type(2) li span:nth-of-type(2){
+    color: #9d9d9d;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+}
+@media screen and (max-width:950px) {
+    #wenzhang>div:nth-of-type(1),#wenzhang>div:nth-of-type(2){
+        width:100%;
+        margin-left: 0;
+    }
+    #wenzhang>div:nth-of-type(2) ul{
+        width: 100%;
+    }
+    #wenzhang>div:nth-of-type(1) div{
+        width: 100%;
+    }
+}
+/****************************************************/
+#roll{
+    width: 100%;
+    margin-top:20px;
+    overflow: hidden;
+}
+#roll ul:after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+#roll ul{
+    list-style: none;
+    width:4140px;
+    margin: 0 auto;
+    border: saddlebrown solid 1px;
+}
+#roll li{
+    margin: 5px 10px;
+    float: left;
+    cursor: pointer;
+}
+#roll li div:nth-of-type(2){
+    text-align: center;
+}
+/************************************************************/
+.logging{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: saddlebrown solid 1px;
+    width: 550px;
+    z-index: 200;
+    background-color: white;
+    display: none;
+}
+.logging:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.logging>p{
+    font: normal 200 2rem "华文楷体";
+    width: 100%;
+    line-height: 50px;
+    padding-left: 10px;
+    background-color: rgba(191, 191, 191, 0.27) ;
+}
+.logging>p span{
+    font-size: 25px;
+    margin-left: 399px;
+    vertical-align: top;
+}
+.logging>p span:hover{
+    color: #B22222;
+    cursor: pointer;
+}
+.logging div p{
+    font: normal 200 1.5rem "华文楷体";
+}
+.logging div{
+    float: left;
+
+}
+.logging ul{
+    text-align: center;
+}
+.logging li{
+    list-style: none;
+    margin-top: 5px;
+}
+.logging>div:nth-of-type(1){
+    width: 60%;
+    margin-top: 20px;
+
+}
+.logging div:nth-of-type(1) li:nth-of-type(3){
+    text-align: center;
+
+}
+.logging div:nth-of-type(1) li div{
+    width: 230px;
+    height: 30px;
+    margin-left: 50px;
+    color: #9d9d9d;
+}
+.logging div:nth-of-type(1) [type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
+}
+.logging div:nth-of-type(1) li div em{
+    font: normal 200 17px "华文楷体";
+    vertical-align: top;
+}
+.logging div:nth-of-type(1) li div span{
+    font: normal 200 15px "华文楷体";
+    margin-left: 50px;
+
+}
+.logging div:nth-of-type(1) button {
+    font: normal 200 17px "华文楷体";
+    background-color: rgba(17, 195, 231, 0.74);
+    outline: none;
+    width: 230px;
+    height: 30px;
+}
+.logging div:nth-of-type(1) input::placeholder{
+    color: #9d9d9d;
+    font: normal 200 17px "华文楷体";
+}
+.logging div:nth-of-type(1) [type="text"]{
+    outline: none;
+    width: 230px;
+    height: 30px;
+}
+.logging div:nth-of-type(1) p a{
+    margin-left: 60%;
+
+}
+.logging div:nth-of-type(1) p a:hover{
+    text-decoration: none;
+}
+
+.logging div:nth-of-type(2){
+    width: 40%;
+    border-left: black 1px solid;
+
+}
+.logging div:nth-of-type(2) button{
+    border-radius:10px;
+    width: 150px;
+    margin: 3px 0;
+    padding: 5px 0;
+    background-color: rgba(191, 191, 191, 0.27);
+    outline: none;
+}
+.logging div:nth-of-type(2) button span:nth-of-type(1){
+    font-size: 20px;
+}
+.logging div:nth-of-type(2) li:nth-of-type(1) span:nth-of-type(1){
+    color: red;
+}
+.logging div:nth-of-type(2) li:nth-of-type(2) span:nth-of-type(1){
+    color: #fe7b0d;
+}
+.logging div:nth-of-type(2) li:nth-of-type(3) span:nth-of-type(1) {
+     color: #50b404;
+}
+.logging div:nth-of-type(2) button span:nth-of-type(2){
+    font: normal 200 17px "华文楷体";
+
+}

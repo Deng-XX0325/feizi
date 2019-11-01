@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgba(214, 214, 214, 0.49);
+
+}
+.divimg{
+    margin-left: 10%;
+}
+.in{
+    margin-left: 55%;
+    font: normal 500 20px "方正舒体";
+
+}
+.in a{
+    color:#B22222;
+    size: 28px;
+}
+#headdiv div:nth-of-type(1){
+    width: 180px;
+    height: 60px;
+}
+#headdiv div:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+}
+/*#headdiv div:nth-of-type(2){*/
+/*    width: 180px;*/
+/*    height: 160px;*/
+/*}*/
+#headdiv div{
+    display: inline-block;
+}
+#headdiv{
+    margin: 20px 10%;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 5px solid #B22222;
+}
+@media screen and (max-width:950px) {
+    #headdiv{
+        margin: 20px 0;
+    }
+}
+.sheet{
+    margin: 0 15%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.frame{
+    /*height: 70px;*/
+    margin-top: 20px;
+}
+.frame div{
+    display: inline-block;
+    font: normal 500 20px "方正舒体";
+
+}
+input{
+    width: 300px;
+    height: 45px;
+    font-size: 25px;
+}
+input::placeholder{
+    font-size: 17px;
+    position: relative;
+
+}
+.frame:nth-of-type(4) input,.frame:nth-of-type(6) input{
+    width:150px;
+}
+.frame img{
+    width: 100px;
+    height: 50px;
+    vertical-align:bottom;
+}
+.frame:nth-of-type(6) button{
+    width: 110px;
+    height: 40px;
+    background-color: #2b79b2;
+    font: normal 500 20px "方正舒体";
+}
+.frame:nth-of-type(6) button:hover{
+    background-color: #3197dd;
+    font: normal 500 20px "方正舒体";
+}
+
+.divh {
+    background-color: #b22222;;
+    width: 200px;
+    font: normal 500 30px "方正舒体";
+    text-align: center;
+    line-height: 40px;
+    margin: 20px 10%;
+    color: white;
+}
+.frame:nth-of-type(1) {
+    margin-left:25%;
+}
+.frame:nth-of-type(2) {
+    margin-left:25%;
+}
+.frame:nth-of-type(3) {
+    margin-left:21%;
+}
+.frame:nth-of-type(4) {
+     margin-left:23%;
+ }
+.frame:nth-of-type(5) {
+    margin-left:23%;
+}.frame:nth-of-type(6) {
+     margin-left:19%;
+ }
+.zhu{
+    line-height: 30px;
+    width: 50%;
+    height: 40px;
+    margin: 30px auto;
+}
+.zhuc{
+    line-height: 30px;
+    width: 50%;
+    height: 40px;
+    background-color: rgba(178, 34, 34, 0.74);
+    margin: 30px auto;
+    font: normal 500 30px "方正舒体";
+    text-align: center;
+    color: white;
+    outline: none;
+}
+.zhuc:hover{
+    cursor: pointer;
+    background-color: rgba(178, 34, 34, 0.94);
+}
+@media screen and (max-width:900px) {
+    .sheet{
+        margin: 0;
+    }
+    .frame div{
+        display: block;
+    }
+    .frame:nth-of-type(3), .frame:nth-of-type(4), .frame:nth-of-type(5), .frame:nth-of-type(6){
+        margin-left: 25%;
+    }
+
+}
+#zhuche{
+    display: none;
+}
+.zhuche{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+

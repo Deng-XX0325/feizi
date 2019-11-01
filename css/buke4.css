@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+}
+#imgss{
+    column-width:360px;
+    column-gap: 5px;
+    margin-top: 20px;
+}
+#imgss div img{
+    width: 360px;
+    margin: 10px;
+    border: black 1px solid;
+    border-radius:10px ;
+    padding: 10px;
+}
+#imgss div img:hover{
+    cursor: zoom-in;
+}
+.PhotoZoom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: rgba(52, 52, 52, 0.8);*/
+}
+.PhotoZoom:hover{
+    cursor: zoom-out;
+}
+@media screen and (max-width:1000px) {
+    #imgss div img{
+        width:80%;
+        margin: 10%;
+    }
+}

@@ -1,0 +1,278 @@
+
+.vidcon{
+    margin: 30px 10%;
+}
+.vidcon:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#videos,#co{
+   display: inline-block;
+    float: left;
+}
+#co{
+    width: 25%;
+}
+#videos{
+    width: 75%;
+}
+/*.prelude{*/
+/*    width: 100%;*/
+/*    height: 400px;*/
+/*}*/
+.randomzi{
+    width: 100%;
+    height: 400px;
+    background: url("../img/beijing.jpg") ;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+.randomzi {
+    width: 100%;
+    /*border: black 1px solid;*/
+    box-shadow:  0 0 10px black;
+    margin: 0 0 10px 0 ;
+}
+.randomzi{
+    /*border: black 1px solid;*/
+    padding: 15% 10%;
+    vertical-align: middle;
+}
+.randomzi div:nth-of-type(1){
+    font: normal 400 25px "方正姚体";
+}
+.randomzi div:nth-of-type(2){
+    font: normal 300 20px "方正姚体";
+    color: rgba(80, 180, 4, 0.93);
+    margin-left: 60%;
+    margin-top: 40px;
+}
+.plun ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10%;
+    color: #9d9d9d;
+    font: normal 300 18px "方正姚体";
+    /*border: black 1px solid;*/
+}
+.xi ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10%;
+    color: #9d9d9d;
+    font: normal 300 18px "方正姚体";
+    /*border: black 1px solid;*/
+    margin-top: 10px;
+}
+
+.plun{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.plun li:hover,.xi li:hover{
+    cursor:pointer;
+    color: #B22222;
+    text-shadow:0 0 3px #B22222;
+}
+.xi{
+    margin: 10px 30%;
+    padding-top: 30px;
+}
+.xi span:nth-of-type(1){
+    color: #B22222;
+    font-size: 50px;
+}
+
+
+
+#discuss{
+    color: #ffffff;
+    width: 100px;
+    line-height: 50px;
+    background-color: #B22222;
+    border-radius: 10px 10px 0 0;
+    margin-left: 10%;
+    text-align: center;
+
+}
+#comment{
+    border: 1px saddlebrown solid;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#comment table{
+    width: 90%;
+    margin-top: 40px;
+    margin-left:6%;
+}
+
+#comment label{
+    width: 80%;
+}
+#comment textarea {
+    width: 100%;
+}
+#comment img{
+    width: 100px;
+    border: black 1px solid;
+    padding: 10px;
+}
+#comment table tr{
+    width: 100%;
+}
+#comment table tr td:nth-of-type(2){
+    border-top: #bababa 1px solid;
+    width: 88%;
+}
+
+#zhong{
+    width: 80%;
+    margin: 50px auto;
+}
+#zhong div:nth-of-type(1){
+    font: normal 300 17px "方正姚体";
+    line-height: 35px;
+}
+#zhong div:nth-of-type(1) span{
+    font-size: 40px;
+    color: #B22222;
+}
+#zhong label{
+    margin-left: 10%;
+    outline: none;
+
+}
+#zhong div:nth-of-type(2) button{
+    font: normal 300 17px "方正姚体";
+    width: 100px;
+    margin-top: 10px;
+    line-height: 35px;
+    margin-left: 70%;
+    background-color: #B22222;
+    outline: none;
+}
+
+#co>div:nth-of-type(1)ul>li{
+   list-style: none;
+    margin:0 0 10px 20px;
+    width: 100%;
+}
+#co ul {
+    width: 80%;
+    margin:10px;
+}
+#co ul:nth-of-type(2)>li{
+    border-top: #a2a2a2 1px solid;
+    line-height: 30px;
+}
+#co ul:nth-of-type(1) li{
+   cursor: pointer;
+}
+#co ul>li span{
+    color: #B22222;
+}
+#co>div{
+    width: 90%;
+    border: black 1px solid;
+   margin: 0 auto;
+}
+#co>div:nth-of-type(1) div:nth-of-type(1){
+    width: 100%;
+    text-align: center;
+    margin: 20px  0;
+}
+#co img{
+    width: 50%;
+}
+
+#co div:nth-of-type(1) li{
+    list-style: none;
+}
+.cuzi{
+    font: normal 500 20px "方正姚体";
+
+}
+#co div:nth-of-type(2) table{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#co div:nth-of-type(2) table span{
+
+}
+#co div:nth-of-type(2) table td{
+    width: 100px;
+}
+#co div:nth-of-type(2) table td li{
+    margin-top: 10px;
+    color:  #B22222;
+}
+#co div:nth-of-type(2) table td li span{
+    font:normal 600 1.2rem "华文宋体";
+    color: #000000;
+}
+#co div:nth-of-type(2) div:nth-of-type(1){
+    font: normal 300 30px "方正姚体";
+    width: 100%;
+    line-height: 50px;
+    background-color: #B22222;
+    color: white;
+}
+#co div:nth-of-type(2){
+      margin-top: 30px;
+    background-image: url("../img/fy.jpg");
+
+}
+#co div:nth-of-type(2) li span:hover{
+    color:  #B22222;
+    transition: all 0.5s;
+}
+
+#co div:nth-of-type(2) table:nth-of-type(4) tr:last-child{
+    text-align: right;
+    line-height: 50px;
+}
+#co div:nth-of-type(2) table:nth-of-type(4) a{
+    color: #B22222;
+}
+#co div:nth-of-type(2) table:nth-of-type(4) a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width:1100px) {
+    .prelude,#condivol{
+        width: 100%;
+    }
+    #videos{
+        width: 100%;
+    }
+    .vidcon{
+        margin: 30px 0;
+    }
+    .xi{
+        margin: 10px 20%;
+    }
+    .plun{
+        margin-left: 0;
+        text-align: center;
+       }
+    .plun ul li{
+        padding-left: 5%;
+        margin: 0 auto;
+    }
+    #co{
+        margin-top: 20px;
+         width: 100%;
+    }
+    #co div:nth-of-type(2) table td{
+        width: 200px;
+    }
+    #comment table tr td:nth-of-type(2){
+        width: 80%;
+    }
+    #co div:nth-of-type(2) table ul:nth-of-type(1){
+        padding-left:30%;
+
+    }
+}
